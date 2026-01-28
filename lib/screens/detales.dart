@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:homework6/models/items_model.dart';
+import 'package:homework6/screens/reviwes.dart';
 
 class Detales extends StatelessWidget {
   final ItemsModel itemsdata;
@@ -46,7 +47,16 @@ class Detales extends StatelessWidget {
 
             ),
           ),
-          
+          SizedBox(height: 50,width: 20,),
+          ElevatedButton(
+            onPressed: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Reviwes(itemsdata: itemsdata)),
+              );
+            },
+            child: Text("Reviwes")
+            )
         ],
       ),
       ),
