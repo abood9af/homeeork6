@@ -15,8 +15,9 @@ A sleek and modern mobile application built to showcase beauty products. The app
 
 | Product Catalog | Product Details | User Reviews |
 | :---: | :---: | :---: |
-|<img width="491" height="1099" alt="Screenshot 2026-01-28 102914" src="https://github.com/user-attachments/assets/7be0df45-979c-4f3e-bfbc-98e98cff8f26" />| <img width="511" height="1095" alt="Screenshot 2026-01-28 102929" src="https://github.com/user-attachments/assets/276daefc-a1ad-4fac-9a86-92585a958988" /> |<img width="507" height="1098" alt="Screenshot 2026-01-28 115754" src="https://github.com/user-attachments/assets/547a041d-51a6-494e-95cb-96a9bfd56ebd" />|
+|<img width="491" height="1099" alt="Screenshot 2026-01-28 102914" src="https://github.com/user-attachments/assets/7be0df45-979c-4f3e-bfbc-98e98cff8f26" />| <img width="511" height="1095" alt="Screenshot 2026-01-28 102929" src="https://github.com/user-attachments/assets/276daefc-a1ad-4fac-9a86-92585a958988" /> |<img width="511" height="1057" alt="Screenshot 2026-01-28 121421" src="https://github.com/user-attachments/assets/4ab35639-b574-46ad-8407-6bc092aeca7d" />|
 | *Browse Collections* | *Product Specifications* | *Customer Feedback* |
+
 
 ---
 
