@@ -16,7 +16,14 @@ class Api {
 
     for (var element in resualte['products']) {
       ItemsModel item = ItemsModel.fromJson(element);
+      if(item.price == 9.99){ 
+        item.thumbnail='error';
       itemsList.add(item);
+      }
+      else{
+      itemsList.add(item);
+
+      }
     }
 
     return itemsList;

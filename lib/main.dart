@@ -11,6 +11,17 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
+        theme:  ThemeData(
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            // textStyle: TextStyle(color:  Color.fromARGB(255, 48, 192, 19)),
+            backgroundColor: Colors.cyan,
+            foregroundColor: Colors.white,
+            
+          ),
+          
+        ),
+      ),
       home: Homepage()
     );
   }

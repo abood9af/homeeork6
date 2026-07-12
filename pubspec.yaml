@@ -7,6 +7,8 @@ environment:
   sdk: ^3.11.0-296.3.beta
 
 dependencies:
+  rating_summary: ^1.0.2+1
+  cached_network_image: ^3.4.1
   easy_stars: ^1.0.9
   flutter:
     sdk: flutter
