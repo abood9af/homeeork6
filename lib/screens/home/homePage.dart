@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:homework6/constants/images.dart';
-import 'package:homework6/screens/detales.dart';
+import 'package:homework6/screens/detals/detals_page/detales.dart';
 import 'package:homework6/services/api.dart';
 
 class Homepage extends StatelessWidget {
@@ -64,32 +63,32 @@ class Homepage extends StatelessWidget {
                     var item = snapshot.data![index];
                     return Padding(
                       padding: const EdgeInsets.all(0.0),
-                      child: Hero(
-                        tag: item.title!,
-                        child: Card(
-                          child: Padding(
-                            padding: const EdgeInsets.all(4.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                imageUrl(snapshot.data![index].thumbnail ?? ''),
-                                Text(snapshot.data![index].title ?? 'No Title'),
-                                Text('\$${item.price.toString()}'),
-                                ElevatedButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => Detales(
-                                          item: snapshot.data![index],
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                  child: Text("info"),
-                                ),
-                              ],
-                            ),
+
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(4.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Hero(
+                                tag: item.title!,
+                                child: imageUrl(snapshot.data![index].thumbnail ?? ''),
+                              ),
+                              Text(snapshot.data![index].title ?? 'No Title'),
+                              Text('\$${item.price.toString()}'),
+                              ElevatedButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          Detales(item: snapshot.data![index]),
+                                    ),
+                                  );
+                                },
+                                child: Text("info"),
+                              ),
+                            ],
                           ),
                         ),
                       ),
